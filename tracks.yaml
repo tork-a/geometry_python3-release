@@ -171,11 +171,11 @@ tracks:
     name: upstream
     patches: null
     release_inc: '1'
-    release_repo_url: git@github.com:ros-gbp/geometry-release.git
+    release_repo_url: git@github.com:tork-a/geometry_python3-release.git
     release_tag: :{version}
     ros_distro: melodic
     vcs_type: git
-    vcs_uri: https://github.com/ros/geometry.git
+    vcs_uri: https://github.com/jsk-ros-pkg/geometry_python3.git
     version: :{auto}
   noetic:
     actions:
