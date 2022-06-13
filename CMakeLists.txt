@@ -5,6 +5,10 @@ find_package(orocos_kdl REQUIRED)
 find_package(catkin REQUIRED geometry_msgs kdl_conversions tf)
 find_package(Eigen3 REQUIRED)
 
+set(Python_ADDITIONAL_VERSIONS 3.6;3.7;3.8) ## https://stackoverflow.com/questions/29245558/how-to-link-with-python3-libs-with-cmake
+find_package(PythonInterp 3 REQUIRED) ## tf_python3 :: use Python3 by default
+find_package(PythonLibs "${PYTHON_VERSION_MAJOR}.${PYTHON_VERSION_MINOR}")
+
 catkin_python_setup()
 
 catkin_package(
